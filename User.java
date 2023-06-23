@@ -144,14 +144,14 @@ public class User {
 
         String emailStatus = "", passwordStatus = "";
 
-        if(isValidEmail){
+        switch(isValidEmail){
             emailStatus = "VALID";
-        }else{
+        }case{
             emailStatus = "INVALID";
         }
-        if(isStrongPassword){
+        switch(isStrongPassword){
             passwordStatus = "STRONG";
-        }else{
+        }case{
             passwordStatus = "WEAK";
         }
 
