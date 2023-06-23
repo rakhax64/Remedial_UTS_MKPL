@@ -37,11 +37,9 @@ public class User {
         // Check if the inputs are empty or blank
         if (programStudy == null || programStudy.trim().isEmpty()) {
             throw new Exception("Program study should not be null, empty, or blank.");
-        }
-        if (faculty == null || faculty.trim().isEmpty()) {
+        }else if (faculty == null || faculty.trim().isEmpty()) {
             throw new Exception("Faculty should not be null, empty, or blank.");
-        }
-        if (enrollmentYear <= 0 || enrollmentYear >= Integer.MAX_VALUE) {
+        }else if (enrollmentYear <= 0 || enrollmentYear >= Integer.MAX_VALUE) {
             throw new Exception("Enrollment year should be a positive integer.");
         }
 
@@ -56,11 +54,9 @@ public class User {
         // Check if the inputs are empty or blank
         if (email == null || email.trim().isEmpty()) {
             throw new Exception("Email should not be null, empty, or blank.");
-        }
-        if (password == null || password.trim().isEmpty()) {
+        }else if (password == null || password.trim().isEmpty()) {
             throw new Exception("Password should not be null, empty, or blank.");
-        }
-        if (userName == null || userName.trim().isEmpty()) {
+        }else if (userName == null || userName.trim().isEmpty()) {
             throw new Exception("User name should not be null, empty, or blank.");
         }
 
@@ -75,16 +71,11 @@ public class User {
         // Check if the inputs are empty or blank
         if (firstName == null || firstName.trim().isEmpty()) {
             throw new Exception("First name should not be null, empty, or blank.");
-        }
-        if (lastName == null || lastName.trim().isEmpty()) {
+        }else if (lastName == null || lastName.trim().isEmpty()) {
             throw new Exception("Last name should not be null, empty, or blank.");
-        }
-
-        if (gender == null || gender.trim().isEmpty()) {
+        }else if (gender == null || gender.trim().isEmpty()) {
             throw new Exception("Gender should not be null, empty, or blank.");
-        }
-
-        if (studentIdentifierNumber == null || studentIdentifierNumber.trim().isEmpty()) {
+        }else if (studentIdentifierNumber == null || studentIdentifierNumber.trim().isEmpty()) {
             throw new Exception("Student identifier number should not be null, empty, or blank.");
         }
 
